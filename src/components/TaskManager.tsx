@@ -1,4 +1,4 @@
-import { FormEvent, useReducer, useState } from 'react'
+import { useReducer, useState, type FormEvent } from 'react'
 import { taskReducer } from '../reducers/taskReducer'
 import styles from './TaskManager.module.css'
 
