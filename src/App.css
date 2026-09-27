@@ -1,0 +1,87 @@
+:root {
+  --accent: #1e90ff;
+  --accent-soft: #e6f3ff;
+  --border: #d9e2ec;
+  --input: #f7faff;
+  --muted: #5f6c7b;
+  --surface: #ffffff;
+  --text: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+  background: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+  transition: background-color 240ms ease, color 240ms ease;
+}
+
+.app.dark {
+  --accent: #85d1b0;
+  --accent-soft: #29493f;
+  --border: #465158;
+  --input: #303438;
+  --muted: #bdc7cc;
+  --surface: #2d3034;
+  --text: #ffffff;
+  background: #242629;
+  color: #ffffff;
+}
+
+.main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  margin: 0 auto;
+  max-width: 70rem;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 5vw, 4rem);
+}
+
+.intro {
+  max-width: 42rem;
+  text-align: center;
+}
+
+.intro-label {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin: 0 0 0.8rem;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 4.8rem);
+  letter-spacing: -0.07em;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.intro p:last-child {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.65;
+  margin: 1.35rem auto 0;
+  max-width: 34rem;
+}
+
+.footer {
+  color: var(--muted);
+  font-size: 0.82rem;
+  padding: 0 1.25rem 2rem;
+  text-align: center;
+}
