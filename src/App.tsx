@@ -1,7 +1,7 @@
 import { DARK_THEME } from './constants/theme'
 import { Navbar } from './components/Navbar'
 import { TaskManager } from './components/TaskManager'
-import { useTheme } from './context/ThemeContext'
+import { useTheme } from './context/useTheme'
 import './App.css'
 
 function App() {
