@@ -1,0 +1,56 @@
+.navbar {
+  align-items: center;
+  background: var(--accent);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.1rem clamp(1.25rem, 5vw, 4rem);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.2rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.brand {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.toggleButton {
+  align-items: center;
+  background: #ffffff;
+  border: 0;
+  border-radius: 999px;
+  color: var(--accent);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.toggleButton:hover {
+  box-shadow: 0 0.3rem 1rem rgb(0 0 0 / 15%);
+  transform: translateY(-1px);
+}
+
+.toggleButton:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
